@@ -1,0 +1,5 @@
+iptables:
+  accept_tcp_rules:
+    - { port: 22 }
+    - { port: 3306, source: 10.0.0.4 }
+

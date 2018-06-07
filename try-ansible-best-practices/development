@@ -1,0 +1,16 @@
+[tokyo-webservers]
+10.0.0.4
+
+[tokyo-dbservers]
+10.0.0.5
+
+[webservers:children]
+tokyo-webservers
+
+[dbservers:children]
+tokyo-dbservers
+
+[tokyo:children]
+tokyo-webservers
+tokyo-dbservers
+

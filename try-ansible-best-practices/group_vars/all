@@ -1,0 +1,3 @@
+users:
+  - { name: "moongift", password: "$1$ujlrxTY9$xw91aGGW9xO8i0KvuBHcK0", groups: "wheel" }
+
