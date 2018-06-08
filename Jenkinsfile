@@ -6,9 +6,6 @@ node {
 	}
 
 	stage ('ansible') {
-        dir('try-ansible-best-practices') {
-			sh 'ls -l'
-			sh 'ansible-playbook -i development ./site.yml -u root --private-key=/root/.ssh/id_rsa'
-		}
+		sh "./ansible.sh ${env.WORKSPACE}"
 	}
 }
