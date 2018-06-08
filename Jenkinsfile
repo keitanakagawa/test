@@ -6,6 +6,6 @@ node {
 	}
 
 	stage ('ansible') {
-		sh "./ansible.sh ${env.WORKSPACE}"
+		sh "bash -x ./ansible.sh ${env.WORKSPACE}"
 	}
 }
