@@ -1,4 +1,4 @@
 node {
 	stage 'テスト'
-	sh 'echo test2'
+	sh 'echo test3'
 }
