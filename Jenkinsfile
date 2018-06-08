@@ -3,6 +3,7 @@
 node {
 	stage ('ansible') {
 		dir('${env.WORKSPACE}@script/try-ansible-best-practices') {
-		sh 'ansible-playbook -i development ./site.yml -u root --private-key=~/.ssh/id_rsa'
+			sh 'ansible-playbook -i development ./site.yml -u root --private-key=~/.ssh/id_rsa'
+		}
 	}
 }
