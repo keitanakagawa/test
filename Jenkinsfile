@@ -6,10 +6,9 @@ node {
 	}
 
 	stage ('ansible') {
-		sh 'printenv'
         dir('try-ansible-best-practices') {
 			sh 'ls -l'
-			sh 'sudo ansible-playbook -i development ./site.yml -u root --private-key=~/.ssh/id_rsa'
+			sh 'ansible-playbook -i development ./site.yml -u root --private-key=/root/.ssh/id_rsa'
 		}
 	}
 }
